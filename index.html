@@ -61,6 +61,7 @@
             <td style="padding:16px;width:100%;vertical-align:middle">
               <h2>News</h2>
               <ul>
+                <li><span style="color: gray">[Dec. 2025]</span> We proposed <a href="https://implicit-rdp.github.io/"><strong>ImplicitRDP</strong></a>, an end-to-end version of <a href="https://reactive-diffusion-policy.github.io"><strong>RDP</strong></a> with a streamlined training pipeline.</li>
                 <li><span style="color: gray">[Jun. 2025]</span> <a href="https://reactive-diffusion-policy.github.io"><strong>Reactive Diffusion Policy</strong></a> is selected as a finalist for <strong style="color: red;">Best Student Paper</strong> at RSS 2025! 🔥</li>
                 <li><span style="color: gray">[Apr. 2025]</span> One paper (<a href="https://reactive-diffusion-policy.github.io"><strong>Reactive Diffusion Policy</strong></a>) is accepted to RSS 2025! 🎉</li>
                 <li><span style="color: gray">[Apr. 2025]</span> We have released the <a href="https://github.com/xiaoxiaoxh/reactive_diffusion_policy">code</a> of <a href="https://reactive-diffusion-policy.github.io"><strong>Reactive Diffusion Policy</strong></a>.</li>
@@ -83,6 +84,181 @@
           </tbody></table>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          
+          <!-- ImplicitRDP -->
+          <tr bgcolor="#ffffd0">
+            <td style="padding:16px;width:25%;vertical-align:middle">
+              <div>
+                <div class="clickable" id="ImplicitRDP-gif-container">
+                  <img src='images/ImplicitRDP.gif' alt="GIF of ImplicitRDP Demos" width="160">
+                  <div class="overlay-text">click to view the proposed framework</div>
+                </div>
+                <div class="fullscreen-container" id="ImplicitRDP-framework-container">
+                  <img src='images/ImplicitRDP.png' alt="ImplicitRDP Framework" width="100%">
+                </div>
+              <script type="text/javascript">
+                implicit_rdp_gif = document.getElementById('ImplicitRDP-gif-container');
+                implicit_rdp_framework = document.getElementById('ImplicitRDP-framework-container');
+                implicit_rdp_gif.addEventListener('click', function() {
+                  implicit_rdp_framework.style.display = 'flex';
+                  implicit_rdp_framework.offsetHeight; // trigger reflow
+                  implicit_rdp_framework.classList.add('active');
+                });
+                implicit_rdp_framework.addEventListener('click', function() {
+                  implicit_rdp_framework.classList.remove('active');
+                  implicit_rdp_framework.addEventListener('transitionend', function() {
+                    implicit_rdp_framework.style.display = 'none';
+                  }, { once: true });
+                });
+              </script>
+            </td>
+            <td style="padding:8px;width:75%;vertical-align:middle">
+              <a href="https://implicit-rdp.github.io/">
+              <span class="papertitle">ImplicitRDP: An End-to-End Visual-Force Diffusion Policy with Structural Slow-Fast Learning</span>
+              </a>
+              <br>
+              <strong>Wendi Chen</strong>,
+              <a href="https://hanxue.me">Han Xue</a>,
+              Yi Wang,
+              <a href="https://uimicro.com/">Fangyuan Zhou</a>,
+              <a href="https://lyuj1998.github.io">Jun Lv</a>,
+              <a href="https://github.com/EricJin2002">Yang Jin</a>,
+              Shirun Tang,
+              <a href="https://alvinwen428.github.io">Chuan Wen</a><sup>\( \dagger \)</sup>,
+              <a href="https://www.mvig.org">Cewu Lu</a><sup>\( \dagger \)</sup>
+              (<sup>\( \dagger \)</sup>equal advising)
+              <br>
+              <em>arXiv preprint</em>, 2025
+              <br>
+              <a href="https://implicit-rdp.github.io/">project page</a>
+              <p></p>
+              <p>
+                ImplicitRDP is a unified end-to-end visual-force diffusion policy that integrates visual planning and reactive force control.
+                By leveraging Structural Slow-Fast Learning, it performs closed-loop adjustments at high frequency while maintaining temporal coherence.
+                Additionally, Virtual-target-based Representation Regularization prevents modality collapse, enabling adaptive attention to visual and force modalities.
+              </p>
+            </td>
+          </tr>
+          
+          <!-- SOE -->
+          <tr>
+            <td style="padding:16px;width:25%;vertical-align:middle">
+              <div>
+                <div class="clickable" id="SOE-gif-container">
+                  <img src='images/SOE.gif' alt="GIF of SOE Demos" width="160">
+                  <div class="overlay-text">click to view the proposed framework</div>
+                </div>
+                <div class="fullscreen-container" id="SOE-framework-container">
+                  <img src='images/SOE.svg' alt="SOE Framework" width="100%">
+                </div>
+              <script type="text/javascript">
+                soe_gif = document.getElementById('SOE-gif-container');
+                soe_framework = document.getElementById('SOE-framework-container');
+                soe_gif.addEventListener('click', function() {
+                  soe_framework.style.display = 'flex';
+                  soe_framework.offsetHeight; // trigger reflow
+                  soe_framework.classList.add('active');
+                });
+                soe_framework.addEventListener('click', function() {
+                  soe_framework.classList.remove('active');
+                  soe_framework.addEventListener('transitionend', function() {
+                    soe_framework.style.display = 'none';
+                  }, { once: true });
+                });
+              </script>
+            </td>
+            <td style="padding:8px;width:75%;vertical-align:middle">
+              <a href="https://ericjin2002.github.io/SOE">
+              <span class="papertitle">SOE: Sample-Efficient Robot Policy Self-Improvement via On-Manifold Exploration</span>
+              </a>
+              <br>
+              <a href="https://github.com/EricJin2002">Yang Jin</a>,
+              <a href="https://lyuj1998.github.io">Jun Lv</a>,
+              <a href="https://hanxue.me">Han Xue</a>,
+              <strong>Wendi Chen</strong>,
+              <a href="https://alvinwen428.github.io">Chuan Wen</a><sup>\( \dagger \)</sup>,
+              <a href="https://www.mvig.org">Cewu Lu</a><sup>\( \dagger \)</sup>
+              (<sup>\( \dagger \)</sup>equal advising)
+              <br>
+              <em>arXiv preprint</em>, 2025
+              <br>
+              <a href="https://ericjin2002.github.io/SOE">project page</a>
+              /
+              <a href="https://arxiv.org/pdf/2509.19292">paper</a>
+              /
+              <a href="https://arxiv.org/abs/2509.19292">arXiv</a>
+              /
+              <a href="data/bibtex/SOE.bib">bibtex</a>
+              <p></p>
+              <p>
+                We propose a plug-and-play module that enables constrained exploration on the manifold of valid actions for robotic policies.
+                In this way, our model can generate diverse and consistent actions, supporting sample-efficient policy self-improvement.
+              </p>
+            </td>
+          </tr>
+          
+          <!-- Right-Side-Out -->
+          <tr>
+            <td style="padding:16px;width:25%;vertical-align:middle">
+              <div>
+                <div class="clickable" id="Right-Side-Out-gif-container">
+                  <img src='images/Right-Side-Out.gif' alt="GIF of Right-Side-Out Demos" width="160">
+                  <div class="overlay-text">click to view the proposed framework</div>
+                </div>
+                <div class="fullscreen-container" id="Right-Side-Out-framework-container">
+                  <img src='images/Right-Side-Out.png' alt="Right-Side-Out Framework" width="100%">
+                </div>
+              <script type="text/javascript">
+                right_side_out_gif = document.getElementById('Right-Side-Out-gif-container');
+                right_side_out_framework = document.getElementById('Right-Side-Out-framework-container');
+                right_side_out_gif.addEventListener('click', function() {
+                  right_side_out_framework.style.display = 'flex';
+                  right_side_out_framework.offsetHeight; // trigger reflow
+                  right_side_out_framework.classList.add('active');
+                });
+                right_side_out_framework.addEventListener('click', function() {
+                  right_side_out_framework.classList.remove('active');
+                  right_side_out_framework.addEventListener('transitionend', function() {
+                    right_side_out_framework.style.display = 'none';
+                  }, { once: true });
+                });
+              </script>
+            </td>
+            <td style="padding:8px;width:75%;vertical-align:middle">
+              <a href="https://right-side-out.github.io">
+              <span class="papertitle">Right-Side-Out: Learning Zero-Shot Sim-to-Real Garment Reversal</span>
+              </a>
+              <br>
+              <a href="https://changyu.io">Chang Yu</a><sup>*</sup>,
+              <a href="https://bell0o.github.io">Siyu Ma</a><sup>*</sup>,
+              <a href="https://dwxrycb123.github.io">Wenxin Du</a>,
+              <a href="https://www.math.ucla.edu/~zeshunzong/">Zeshun Zong</a>,
+              <a href="https://hanxue.me">Han Xue</a>,
+              <strong>Wendi Chen</strong>,
+              <a href="https://www.mvig.org">Cewu Lu</a>,
+              <a href="https://yangzzzy.github.io">Yin Yang</a>,
+              <a href="https://scholar.google.com/citations?user=rEEc1X4AAAAJ">Xuchen Han</a>,
+              <a href="https://scholar.google.com/citations?user=seHlDJ4AAAAJ">Joseph Masterjohn</a>,
+              <a href="https://www.tri.global/about-us/dr-alejandro-castro">Alejandro Castro</a>,
+              <a href="https://www.math.ucla.edu/~cffjiang">Chenfanfu Jiang</a>,
+              (<sup>*</sup>equal contributions)
+              <br>
+              <em>arXiv preprint</em>, 2025
+              <br>
+              <a href="https://right-side-out.github.io">project page</a>
+              /
+              <a href="https://arxiv.org/pdf/2509.15953">paper</a>
+              /
+              <a href="https://arxiv.org/abs/2509.15953">arXiv</a>
+              /
+              <a href="data/bibtex/Right-Side-Out.bib">bibtex</a>
+              <p></p>
+              <p>
+                Right-Side-Out is a zero-shot sim-to-real framework that turns garments right-side out by
+                decomposing the task into keypoint-parameterized primitives and scaling training via high-fidelity GPU-parallel MPM simulation.
+              </p>
+            </td>
+          </tr>
 
           <!-- Reactive Diffusion Policy -->
           <tr bgcolor="#ffffd0">
@@ -187,7 +363,7 @@
               <br>
               <strong>Wendi Chen<sup>*</sup></strong>,
               <a href="https://hanxue.me">Han Xue</a><sup>*</sup>,
-              Fangyuan Zhou,
+              <a href="https://uimicro.com/">Fangyuan Zhou</a>,
               Yuan Fang,
               <a href="https://www.mvig.org">Cewu Lu</a>
               (<sup>*</sup>equal contributions)
